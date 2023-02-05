@@ -11,14 +11,15 @@ public class EnvironmentSound : MonoBehaviour
     void Start()
     {
         environmentSoundSource = GetComponent<AudioSource>();
-
-        environmentSoundSource.PlayOneShot(environmentSound);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(!environmentSoundSource.isPlaying)
+        {
+            environmentSoundSource.PlayOneShot(environmentSound);
+        }
     }
 
     private void OnTriggerEnter(AudioClip clip)
