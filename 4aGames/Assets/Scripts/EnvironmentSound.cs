@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class EnvironmentSound : MonoBehaviour
 {
-    //public AudioSource environmentSound;
+    public AudioSource environmentSoundSource;
+    public AudioClip environmentSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        environmentSoundSource = GetComponent<AudioSource>();
+
+        environmentSoundSource.PlayOneShot(environmentSound);
     }
 
     // Update is called once per frame
@@ -20,6 +23,6 @@ public class EnvironmentSound : MonoBehaviour
 
     private void OnTriggerEnter(AudioClip clip)
     {
-        GetComponent<AudioSource>().PlayOneShot(clip);
+        
     }
 }
