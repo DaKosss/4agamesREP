@@ -41,8 +41,8 @@ public class AudioRecerbZone : MonoBehaviour
     {
         if (lowPass_ON)
         {
-            lowPassFilter.cutoffFrequency = Mathf.MoveTowards(lowPassFilter.cutoffFrequency, 6000, lowPass_speed);
-            if (lowPassFilter.cutoffFrequency == 6000) lowPass_ON = false;
+            lowPassFilter.cutoffFrequency = Mathf.MoveTowards(lowPassFilter.cutoffFrequency, 3000, lowPass_speed);
+            if (lowPassFilter.cutoffFrequency == 3000) lowPass_ON = false;
         }
         else if (lowPass_OFF)
         {
