@@ -8,6 +8,8 @@ public class EnemyMoving : MonoBehaviour
     public GameObject Player;
     public Transform Player2;
     public float Speed;
+    public GameObject Collider;
+    
 
     void Start()
     {
@@ -19,13 +21,13 @@ public class EnemyMoving : MonoBehaviour
         transform.LookAt (Player2);
         transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, Speed * Time.deltaTime);
     }
-    void onTriggerEnter(Collider Coll){
-        if (Coll.gameObject.tag == "Looking") {
+    void OnTriggerEnter(Collider other){
+        if (Collider.gameObject.tag == "Looking") {
             Speed = 0f;
         }
     }
-    void onTriggerExit(Collider Coll){
-        if (Coll.gameObject.tag == "Looking") {
+    void OnTriggerExit(Collider other){
+        if (Collider.gameObject.tag == "Looking") {
             Speed = 5f;
         }
     }
