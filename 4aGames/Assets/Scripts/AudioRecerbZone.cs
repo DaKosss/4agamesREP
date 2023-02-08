@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioRecerbZone : MonoBehaviour
 {
-
+    public GameObject playerCollider;
     public GameObject reverbZone;
     public AudioLowPassFilter lowPassFilter; 
 
@@ -14,20 +14,28 @@ public class AudioRecerbZone : MonoBehaviour
 
     public float lowPass_speed = 100000f;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider playerCollider)
     {
-        reverbZone.SetActive(true);
+        if (playerCollider.gameObject.tag == "Player")
+        {
+            reverbZone.SetActive(true);
 
-        lowPass_ON = true;
-        lowPass_OFF = false;
+            lowPass_ON = true;
+            lowPass_OFF = false;
+        }
+            
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider playerCollider)
     {
-        reverbZone.SetActive(false);
+        if(playerCollider.gameObject.tag == "Player")
+        {
+            reverbZone.SetActive(false);
 
-        lowPass_ON = false;
-        lowPass_OFF = true;
+            lowPass_ON = false;
+            lowPass_OFF = true;
+        }
+        
     }
 
     // Start is called before the first frame update
