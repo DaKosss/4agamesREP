@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.19525692, g: 0.23201185, b: 0.2671882, a: 1}
+  m_IndirectSpecularColor: {r: 0.19523895, g: 0.23198636, b: 0.2671622, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6047,7 +6047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4061999138098054953, guid: c0ec2cd63f93487d92d6623d393c83ba, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4061999138098054953, guid: c0ec2cd63f93487d92d6623d393c83ba, type: 3}
       propertyPath: m_TagString
@@ -29499,7 +29499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 152728, guid: dcecfa4dfd12b4f4ead16037aee46354, type: 3}
       propertyPath: m_TagString
-      value: MainCamera
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 411688, guid: dcecfa4dfd12b4f4ead16037aee46354, type: 3}
       propertyPath: m_RootOrder
@@ -37926,7 +37926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964417252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.216, y: -1.29, z: 2.11}
+  m_LocalPosition: {x: 4.111, y: -1.17, z: 4.454}
   m_LocalScale: {x: 0.8257578, y: 0.9588207, z: 0.022055956}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38026,15 +38026,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  pickupSound: {fileID: 0}
-  ambianceLayer1: {fileID: 0}
-  ambianceLayer2: {fileID: 0}
-  ambianceLayer3: {fileID: 0}
-  ambianceLayer4: {fileID: 0}
-  ambianceLayer5: {fileID: 0}
-  ambianceLayer6: {fileID: 0}
-  ambianceLayer7: {fileID: 0}
-  ambianceLayer8: {fileID: 0}
+  collectLists:
+  - {fileID: 1964417252}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  collectAudioSource: {fileID: 1145785479}
+  collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
 --- !u!4 &1966009986 stripped

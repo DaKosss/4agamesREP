@@ -6,14 +6,17 @@ using UnityEngine.UI;
 public class pickupLetter : MonoBehaviour
 {
     public GameObject collectTextObj, intText;
-    public AudioSource pickupSound, ambianceLayer1, ambianceLayer2, ambianceLayer3, ambianceLayer4, ambianceLayer5, ambianceLayer6, ambianceLayer7, ambianceLayer8;
-   public bool interactable;
+    public List<GameObject> collectLists = new List<GameObject>();
+    //public AudioSource pickupSound, ambianceLayer1, ambianceLayer2, ambianceLayer3, ambianceLayer4, ambianceLayer5, ambianceLayer6, ambianceLayer7, ambianceLayer8;
+    public AudioSource collectAudioSource;
+    public AudioClip collectAudioClip;
+    public bool interactable;
     public static int pagesCollected;
     public Text collectText;
 
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
+        if (other.CompareTag("Player"))
         {
             intText.SetActive(true);
             interactable = true;
@@ -21,7 +24,7 @@ public class pickupLetter : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
+        if (other.CompareTag("Player"))
         {
             intText.SetActive(false);
             interactable = false;
@@ -29,41 +32,57 @@ public class pickupLetter : MonoBehaviour
     }
     void Update()
     {
-        if (interactable == true)
+        if (interactable)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 pagesCollected = pagesCollected + 1;
                 collectText.text = pagesCollected + "/8 pages";
                 collectTextObj.SetActive(true);
-                pickupSound.Play();
+                collectAudioSource.Play();
 
 
                 switch(pagesCollected)
                 {
                     case 1:
-                        ambianceLayer1.Play();
+                        //ambianceLayer1.Play();
+                        collectAudioSource.PlayOneShot(collectAudioClip);
+                        collectLists[0].SetActive(false);
                         break;
                     case 2:
-                        ambianceLayer2.Play();
+                        //ambianceLayer2.Play();
+                        collectAudioSource.PlayOneShot(collectAudioClip);
+                        collectLists[1].SetActive(false);
                         break;
                     case 3:
-                        ambianceLayer3.Play();
+                        //ambianceLayer3.Play();
+                        collectAudioSource.PlayOneShot(collectAudioClip);
+                        collectLists[2].SetActive(false);
                         break;
                     case 4:
-                        ambianceLayer4.Play();
+                        //ambianceLayer4.Play();
+                        collectAudioSource.PlayOneShot(collectAudioClip);
+                        collectLists[3].SetActive(false);
                         break;
                     case 5:
-                        ambianceLayer5.Play();
+                        //ambianceLayer5.Play();
+                        collectAudioSource.PlayOneShot(collectAudioClip);
+                        collectLists[4].SetActive(false);
                         break;
                     case 6:
-                        ambianceLayer6.Play();
+                        //ambianceLayer6.Play();
+                        collectAudioSource.PlayOneShot(collectAudioClip);
+                        collectLists[5].SetActive(false);
                         break;
                     case 7:
-                        ambianceLayer7.Play();
+                        //ambianceLayer7.Play();
+                        collectAudioSource.PlayOneShot(collectAudioClip);
+                        collectLists[6].SetActive(false);
                         break;
                     case 8:
-                        ambianceLayer8.Play();
+                        //ambianceLayer8.Play();
+                        collectAudioSource.PlayOneShot(collectAudioClip);
+                        collectLists[7].SetActive(false);
                         break;
                 }
                 intText.SetActive(false);

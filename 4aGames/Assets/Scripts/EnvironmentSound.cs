@@ -22,8 +22,8 @@ public class EnvironmentSound : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(AudioClip clip)
-    {
+    //private void OnTriggerEnter(AudioClip clip)
+    //{
         
-    }
+    //}
 }
