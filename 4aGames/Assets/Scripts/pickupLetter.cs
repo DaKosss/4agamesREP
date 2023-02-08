@@ -37,7 +37,7 @@ public class pickupLetter : MonoBehaviour
                 collectText.text = pagesCollected + "/8 pages";
                 collectTextObj.SetActive(true);
                 pickupSound.Play();
-          
+
 
                 switch(pagesCollected)
                 {
@@ -69,7 +69,7 @@ public class pickupLetter : MonoBehaviour
                 intText.SetActive(false);
                 this.gameObject.SetActive(false);
                 interactable = false;
-     
+              
             }
         }
     }
