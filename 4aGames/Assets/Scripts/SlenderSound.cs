@@ -7,7 +7,8 @@ public class SlenderSound : MonoBehaviour
     public AudioSource screamerSource;
     public AudioClip screamerSound;
     public GameObject Collider;
-
+    public int timeStop;
+    public GameObject vidoe;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class SlenderSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        vidoe.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider Collider)
@@ -25,6 +26,8 @@ public class SlenderSound : MonoBehaviour
         if (Collider.gameObject.tag == "ScreamerTrigger")
         {
             screamerSource.PlayOneShot(screamerSound);
+            vidoe.SetActive(true);
+            Destroy(vidoe, timeStop);
         }
 
 
