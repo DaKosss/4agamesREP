@@ -28,7 +28,7 @@ public class EnemyMoving : MonoBehaviour
     }
     void OnTriggerExit(Collider other){
         if (Collider.gameObject.tag == "Looking") {
-            Speed = 2f;
+            Speed = 5f;
         }
     }
 }   
