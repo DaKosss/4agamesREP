@@ -13,7 +13,7 @@ public class EnemyMoving : MonoBehaviour
 
     void Start()
     {
-        
+        Speed = 0f;
     }
 
     void Update()
@@ -28,7 +28,7 @@ public class EnemyMoving : MonoBehaviour
     }
     void OnTriggerExit(Collider other){
         if (Collider.gameObject.tag == "Looking") {
-            Speed = 5f;
+            Speed = 2f;
         }
     }
 }   
