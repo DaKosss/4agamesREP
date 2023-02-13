@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: dd4251c44073f0648ab6c79c24a06365
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Berrycake Demo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: aabcc2f6961884840968e57f4f404e8e, type: 3}
+  - {fileID: 12800000, guid: 734acc643c0710d47b7a4489282a9a29, type: 3}
+  - {fileID: 12800000, guid: 424542d7d6ab6664080b2a69b0c8cd4b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
