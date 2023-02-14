@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.4
+  m_FogDensity: 0.2
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
@@ -16984,6 +16984,7 @@ MonoBehaviour:
   time: 10
   Collider: {fileID: 574736334}
   vidoe: {fileID: 2074035725}
+  GameOver: 0
 --- !u!54 &833832613
 Rigidbody:
   m_ObjectHideFlags: 0
