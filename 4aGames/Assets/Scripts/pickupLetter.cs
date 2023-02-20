@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class pickupLetter : MonoBehaviour
@@ -88,6 +89,10 @@ public class pickupLetter : MonoBehaviour
                 intText.SetActive(false);
                 this.gameObject.SetActive(false);
                 interactable = false;
+                if (pagesCollected == 8)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
               
             }
         }
