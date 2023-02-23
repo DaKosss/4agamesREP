@@ -7,6 +7,9 @@ public class escMenu : MonoBehaviour
     public AudioListener audioListener;
     public GameObject CanvasMenu;
     public GameObject CanvasUI;
+    public GameObject CanvasInventory;
+    public GameObject OptionsMenu;
+    public GameObject menuButtons;
     public static bool GameIsPaused = false;
     // Start is called before the first frame update
     public void ExitMainMenuGame()
@@ -35,16 +38,24 @@ public class escMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(GameIsPaused)
+            if(OptionsMenu.activeSelf)
             {
-                ContinueGame();
+                OptionsMenu.SetActive(false);
+                menuButtons.SetActive(true);
             }
             else
-            {
-                PauseGame();
-            }
+                if (GameIsPaused)
+                {
+                    ContinueGame();
+                }
+                else
+                {
+                    PauseGame();
+                }
         }
+
     }
 }

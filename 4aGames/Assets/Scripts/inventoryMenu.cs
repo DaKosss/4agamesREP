@@ -6,7 +6,7 @@ public class inventoryMenu : MonoBehaviour
 {
     public AudioListener audioListener;
     public GameObject CanvasMenu;
-    //public GameObject CanvasUI;
+    public GameObject CanvasUI;
     public static bool GameIsPaused = false;
     // Start is called before the first frame update
     public void ExitMainMenuGame()
@@ -17,7 +17,7 @@ public class inventoryMenu : MonoBehaviour
     public void ContinueGame()
     {
         CanvasMenu.SetActive(false);
-        //CanvasUI.SetActive(true);
+        CanvasUI.SetActive(true);
         Time.timeScale = 1.0f;
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -26,7 +26,7 @@ public class inventoryMenu : MonoBehaviour
     void PauseGame()
     {
         CanvasMenu.SetActive(true);
-        //CanvasUI.SetActive(false);
+        CanvasUI.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.Confined;
@@ -46,5 +46,13 @@ public class inventoryMenu : MonoBehaviour
                 PauseGame();
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameIsPaused)
+            {
+                ContinueGame();
+            }
+        }
+
     }
 }
