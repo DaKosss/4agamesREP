@@ -20,7 +20,7 @@ public class AudioMaster : MonoBehaviour
     {
         _sensitivitySlider.onValueChanged.AddListener((v) =>
         {
-            _textSlider.text = v.ToString("0.00");
+            //_textSlider.text = v.ToString("0.00");
             userMouseSpeed = v;
         });
     }
