@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  collectAudioSource: {fileID: 1145785479}
+  collectAudioSource: {fileID: 1071783569}
   collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
@@ -3670,7 +3670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 590156089}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -3842,7 +3843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  collectAudioSource: {fileID: 1145785479}
+  collectAudioSource: {fileID: 1071783569}
   collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
@@ -6645,7 +6646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 1445336880}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -14348,7 +14350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 855380997}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -14709,7 +14712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  collectAudioSource: {fileID: 1145785479}
+  collectAudioSource: {fileID: 1071783569}
   collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
@@ -16264,7 +16267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 616003738}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -17097,7 +17101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 114268016}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -19720,7 +19725,7 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Player: {fileID: 477621159}
   Player2: {fileID: 1266751632}
-  Speed: 5
+  Speed: 0
   Collider: {fileID: 833832601}
 --- !u!82 &833832603 stripped
 AudioSource:
@@ -21232,7 +21237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 113125539}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -23358,7 +23364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  collectAudioSource: {fileID: 1145785479}
+  collectAudioSource: {fileID: 1071783569}
   collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
@@ -24050,6 +24056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
   playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 2095486575}
   lowPassFilter: {fileID: 1145785481}
@@ -24928,7 +24935,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 1999769578}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -25410,7 +25418,7 @@ AudioSource:
   m_GameObject: {fileID: 1071783565}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  OutputAudioMixerGroup: {fileID: -8143879418828786793, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -25934,7 +25942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 2003909994}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -26940,7 +26949,7 @@ AudioSource:
   m_GameObject: {fileID: 1145785474}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  OutputAudioMixerGroup: {fileID: -7101661571694318553, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -27094,6 +27103,102 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.073584735, y: 0.06360319, z: 2.124723}
   m_Center: {x: 0.01320172, y: -0.14994417, z: 1.0622933}
+--- !u!82 &1145785493
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145785474}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1146645102
 GameObject:
   m_ObjectHideFlags: 0
@@ -28123,7 +28228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  collectAudioSource: {fileID: 1145785479}
+  collectAudioSource: {fileID: 1071783569}
   collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
@@ -28481,7 +28586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 1676764346}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -35555,7 +35661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  collectAudioSource: {fileID: 1145785479}
+  collectAudioSource: {fileID: 1071783569}
   collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
@@ -40860,7 +40966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 965499702}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -42782,7 +42889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  collectAudioSource: {fileID: 1145785479}
+  collectAudioSource: {fileID: 1071783569}
   collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
@@ -45267,7 +45374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 2122035921}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0
@@ -46246,7 +46354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectTextObj: {fileID: 541566504}
   intText: {fileID: 732524353}
-  collectAudioSource: {fileID: 1145785479}
+  collectAudioSource: {fileID: 1071783569}
   collectAudioClip: {fileID: 8300000, guid: 6a4c8fde758b682488add131f5b3fc8c, type: 3}
   interactable: 0
   collectText: {fileID: 541566506}
@@ -48252,7 +48360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc8bfdddb2adbc429e91101f41fd3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
+  mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  playerCollider: {fileID: 477621159}
   reverbZone: {fileID: 1397707637}
   lowPassFilter: {fileID: 1145785481}
   lowPass_ON: 0

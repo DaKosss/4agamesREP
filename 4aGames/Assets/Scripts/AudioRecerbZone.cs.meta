@@ -3,7 +3,11 @@ guid: 8cc8bfdddb2adbc429e91101f41fd3d7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - mixer: {fileID: 24100000, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
+  - playerCollider: {instanceID: 0}
+  - reverbZone: {instanceID: 0}
+  - lowPassFilter: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

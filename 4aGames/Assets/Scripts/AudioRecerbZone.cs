@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioRecerbZone : MonoBehaviour
 {
+    private string _lowCutOffParameter = "Lowpass";
+    public AudioMixer mixer;
+
     public GameObject playerCollider;
     public GameObject reverbZone;
     public AudioLowPassFilter lowPassFilter; 
@@ -49,13 +53,16 @@ public class AudioRecerbZone : MonoBehaviour
     {
         if (lowPass_ON)
         {
-            lowPassFilter.cutoffFrequency = Mathf.MoveTowards(lowPassFilter.cutoffFrequency, 3000, lowPass_speed);
-            if (lowPassFilter.cutoffFrequency == 3000) lowPass_ON = false;
+            mixer.SetFloat(_lowCutOffParameter, 3000);
+
+            //lowPassFilter.cutoffFrequency = Mathf.MoveTowards(lowPassFilter.cutoffFrequency, 3000, lowPass_speed);
+            //if (lowPassFilter.cutoffFrequency == 3000) lowPass_ON = false;
         }
         else if (lowPass_OFF)
         {
-            lowPassFilter.cutoffFrequency = Mathf.MoveTowards(lowPassFilter.cutoffFrequency, 22000, lowPass_speed);
-            if (lowPassFilter.cutoffFrequency == 22000) lowPass_OFF = false;
+            mixer.SetFloat(_lowCutOffParameter, 5000);
+            //lowPassFilter.cutoffFrequency = Mathf.MoveTowards(lowPassFilter.cutoffFrequency, 22000, lowPass_speed);
+            //if (lowPassFilter.cutoffFrequency == 22000) lowPass_OFF = false;
         }
     }
 }
