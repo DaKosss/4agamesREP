@@ -1,13 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace Footsteps {
 
 	public class CameraView : MonoBehaviour {
 
+
+
+		[SerializeField] private Slider _sensitivitySlider;
+
 		[SerializeField] float minTiltAngle = -70f;
 		[SerializeField] float maxTiltAngle = 80f;
-		[SerializeField] float sensitivity = 3f;
+		[SerializeField] float sensitivity = 10 / 4;
+		[SerializeField] float sensDiv = 4f;
 		[SerializeField] bool smooth = true;
 		[SerializeField] float smoothFactor = 15f;
 		[SerializeField] bool invert;
@@ -34,6 +40,12 @@ namespace Footsteps {
 
 				return;
 			}
+
+
+			_sensitivitySlider.onValueChanged.AddListener((v) =>
+			{
+				sensitivity = v / sensDiv;
+			});
 		}
 
 		void FixedUpdate() {
