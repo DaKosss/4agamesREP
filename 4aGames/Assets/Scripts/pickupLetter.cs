@@ -15,6 +15,7 @@ public class pickupLetter : MonoBehaviour
     public static int pagesCollected = 0;
     public Text collectText;
     public GameObject letterObj;
+    public GameObject pageItem;
 
 
     void OnTriggerStay(Collider other)
@@ -46,6 +47,7 @@ public class pickupLetter : MonoBehaviour
                 collectAudioSource.Play();
                 collectAudioSource.PlayOneShot(collectAudioClip);
                 letterObj.SetActive(false);
+                pageItem.SetActive(true);
 
                 //switch(pagesCollected)
                 //{
