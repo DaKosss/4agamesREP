@@ -95,10 +95,12 @@ public class pickupLetter : MonoBehaviour
                 intText.SetActive(false);
                 //this.gameObject.SetActive(false);
                 interactable = false;
-                if (pagesCollected == 8)
-                {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                }
+
+
+                //if (pagesCollected == 8)
+                //{
+                //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                //}
               
             }
         }
