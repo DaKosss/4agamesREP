@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 59645
+  controlID: 60227
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 59646
+  controlID: 60228
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 59647
+  controlID: 60229
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b622fcff2864fcff9476fcff04e7fcff4cfdfcff6e15fdffec23fdff264afdff82a4fdff96abfdffeeadfdffbec1fdff3af8fdff8c47feff644cfeff9e5efeffea83feff36c3fefffcc5feff16cffeff96f4feff7801ffffb227ffff303affffccb6ffff8acdffff96cdffffeef4ffff36fbffff2a600000326b000058100700eab807004c050800c0100800501308004e18080020430800005e080076670800b6870a00
+      m_ExpandedIDs: be9bfbffaac1fbff3ec7fbff8ac7fbff5ed7fbff66d7fbff70d7fbff70fcfbff7afcfbffb622fcff2864fcff9476fcff04e7fcff4cfdfcff6e15fdffec23fdff264afdff82a4fdff96abfdffeeadfdffbec1fdff3af8fdff8c47feff644cfeff9e5efeffea83feff36c3fefffcc5feff16cffeff96f4feff7801ffffb227ffff303affffccb6ffff8acdffff96cdffffeef4ffff36fbffff2a600000326b000058100700eab807004c050800c0100800501308004e18080020430800005e080076670800b6870a00e27b0d00ee7b0d00487e0d00d2800d001c840d00da850d004e890d00da890d008a8a0d00d88a0d00ca9d0d00949e0d00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -736,7 +736,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -778,21 +778,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\bossd\OneDrive\Documentos\GitHub\4agamesREP\4aGames
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 69}
-    m_SelectedIDs: 747a0000
-    m_LastClickedID: 31348
+    scrollPos: {x: 0, y: 53}
+    m_SelectedIDs: 727a0000
+    m_LastClickedID: 31346
     m_ExpandedIDs: 00000000fc790000747a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -821,7 +821,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fc79000000ca9a3b
+    m_ExpandedIDs: 00000000fc790000747a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1052,7 +1052,7 @@ MonoBehaviour:
       oldMaxSizes: 
       oldSplitSize: 0
     m_HorizontalSplitter:
-      ID: 21663
+      ID: 60413
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes:
