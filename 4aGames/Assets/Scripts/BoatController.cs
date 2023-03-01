@@ -7,7 +7,7 @@ public class BoatController : MonoBehaviour
     public Rigidbody boat;
 [Header("Controls")]
     public float Accel;
-    public float Break;
+    public float Brake;
     public float Steering;
 [Header("Vehicle Steeings")]
     public float EnginePower = 250f;
