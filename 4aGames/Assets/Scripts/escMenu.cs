@@ -10,11 +10,12 @@ public class escMenu : MonoBehaviour
     public GameObject CanvasInventory;
     public GameObject OptionsMenu;
     public GameObject menuButtons;
+    public GameObject lockUI;
     public static bool GameIsPaused = false;
     // Start is called before the first frame update
     public void ExitMainMenuGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(0);
     }
 
     public void ContinueGame()
@@ -41,12 +42,14 @@ public class escMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(OptionsMenu.activeSelf)
+            if(!lockUI.activeSelf)
             {
-                OptionsMenu.SetActive(false);
-                menuButtons.SetActive(true);
-            }
-            else
+                if (OptionsMenu.activeSelf)
+                {
+                    OptionsMenu.SetActive(false);
+                    menuButtons.SetActive(true);
+                }
+                else
                 if (GameIsPaused)
                 {
                     ContinueGame();
@@ -55,6 +58,8 @@ public class escMenu : MonoBehaviour
                 {
                     PauseGame();
                 }
+            }
+            
         }
 
     }

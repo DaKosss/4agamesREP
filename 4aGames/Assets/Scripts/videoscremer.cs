@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class videoscremer : MonoBehaviour
 {
+    VideoPlayer player;
+
     public int time;
     public GameObject Collider;
     public GameObject vidoe;
@@ -13,7 +16,9 @@ public class videoscremer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = vidoe.GetComponent<VideoPlayer>();
+        player.Prepare();
+        player.loopPointReached += _videoPlayer_loopPointReached;
     }
 
     // Update is called once per frame
@@ -50,5 +55,10 @@ public class videoscremer : MonoBehaviour
 
 
 
+    }
+
+    private void _videoPlayer_loopPointReached(VideoPlayer source)
+    {
+        SceneManager.LoadScene(3);
     }
 }

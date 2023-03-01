@@ -17,6 +17,7 @@ public class monster : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1.0f;
         AI_Agent = gameObject.GetComponent<NavMeshAgent>();
         Player = GameObject.FindGameObjectWithTag("Player");
     }
