@@ -16,7 +16,7 @@ public class TriggerLoadLevel : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.tag == "Playertp") {
+		if (col.tag == "Player") {
 			Application.LoadLevel (Level);
 		}
 	}

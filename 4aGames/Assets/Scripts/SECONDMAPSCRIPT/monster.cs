@@ -7,7 +7,7 @@ public class monster : MonoBehaviour
 {
     private NavMeshAgent AI_Agent;
     private GameObject Player;
-    public GameObject Panel_GaveOver;
+    public int Level;
 
     public Transform[] WayPoints;
     public int Current_Patch;
@@ -50,8 +50,9 @@ public class monster : MonoBehaviour
         float Dist_Player = Vector3.Distance(Player.transform.position, gameObject.transform.position);
         if (Dist_Player < 2)
         {
-            Player.SetActive(false);
-            Panel_GaveOver.SetActive(true);
+        
+
+            Application.LoadLevel(Level);
         }
     }
 }

@@ -8,7 +8,8 @@ public class numpad : MonoBehaviour
     string myString = "";
     public string password;
     public bool flag = false;
-    public int Level;
+    public int Leveltrue;
+    public int Levelfalse;
     void Start()
     {
         myText = GetComponent<Text>();
@@ -20,20 +21,21 @@ public class numpad : MonoBehaviour
         if (myString == password)
         {
             flag = true;
-            Application.LoadLevel(Level);
+            Application.LoadLevel(Leveltrue);
         }
-        if (myString.Length == 8)
+        if (myString.Length == 4)
         {
             if (myString != password)
             {
                 myString = "";
+                Application.LoadLevel(Levelfalse);
             }
         }
     }
 
     public void MyNumber(string number)
     {
-        if (myString.Length < 8)
+        if (myString.Length < 4)
         {
             myString += number;
         }
