@@ -5899,6 +5899,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 786609352}
     m_Modifications:
+    - target: {fileID: 157948, guid: cdeabd8880ead504f983c614a7d875a3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 410084, guid: cdeabd8880ead504f983c614a7d875a3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -10335,12 +10339,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 132460, guid: dcecfa4dfd12b4f4ead16037aee46354, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 132460, guid: dcecfa4dfd12b4f4ead16037aee46354, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 152728, guid: dcecfa4dfd12b4f4ead16037aee46354, type: 3}
       propertyPath: m_Name
       value: first_person_controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 152728, guid: dcecfa4dfd12b4f4ead16037aee46354, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 152728, guid: dcecfa4dfd12b4f4ead16037aee46354, type: 3}
       propertyPath: m_TagString
@@ -11695,6 +11707,7 @@ MonoBehaviour:
   CanvasMenu: {fileID: 440893782}
   CanvasUI: {fileID: 0}
   lockUI: {fileID: 1864765958}
+  helpTable: {fileID: 0}
 --- !u!114 &848404998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15939,9 +15952,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4918112b3d0d7bf4dbd25fe4c55ea3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 10
-  angle: 119
-  playerRef: {fileID: 0}
+  radius: 12.74
+  angle: 181
+  playerRef: {fileID: 786609354}
   targetMask:
     serializedVersion: 2
     m_Bits: 64
@@ -25868,7 +25881,7 @@ GameObject:
   - component: {fileID: 2105489306}
   - component: {fileID: 2105489305}
   - component: {fileID: 2105489304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
