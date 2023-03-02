@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class monster : MonoBehaviour
 {
     private NavMeshAgent AI_Agent;
     private GameObject Player;
-    public int Level;
 
     public Transform[] WayPoints;
     public int Current_Patch;
@@ -55,9 +55,9 @@ public class monster : MonoBehaviour
         float Dist_Player = Vector3.Distance(Player.transform.position, gameObject.transform.position);
         if (Dist_Player < 2)
         {
-        
 
-            Application.LoadLevel(Level);
+
+            SceneManager.LoadScene(3);
         }
     }
 }
