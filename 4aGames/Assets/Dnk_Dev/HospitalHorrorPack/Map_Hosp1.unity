@@ -10601,7 +10601,7 @@ AudioSource:
   m_GameObject: {fileID: 786609349}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7101661571694318553, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -15926,6 +15926,8 @@ MonoBehaviour:
   - {fileID: 1810317700}
   Current_Patch: 0
   AI_Enemy: 0
+  monsterAudioSource: {fileID: 786609355}
+  hortClip: {fileID: 8300000, guid: 560cd90a01d7d4040bfc37a476b2a7a3, type: 3}
 --- !u!136 &1173446635
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15974,7 +15976,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -7101661571694318553, guid: b9d899cbf1d575243b34388b8748c91a, type: 2}
   m_audioClip: {fileID: 8300000, guid: 079ca4fec681f3044ae3a811d97d901f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.108
+  m_Volume: 0.151
   m_Pitch: 1
   Loop: 0
   Mute: 0

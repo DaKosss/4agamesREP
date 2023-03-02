@@ -14,6 +14,7 @@ public class FieldOfView : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask ObstacleMask;
     public bool canSeePlayer;
+    
 
     private void Start()
     {
@@ -33,7 +34,10 @@ public class FieldOfView : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (canSeePlayer == true) gameObject.GetComponent<monster>().AI_Enemy = monster.AI_State.Chase;
+        if (canSeePlayer == true)
+        {
+            gameObject.GetComponent<monster>().AI_Enemy = monster.AI_State.Chase;
+        }
         else gameObject.GetComponent<monster>().AI_Enemy = monster.AI_State.Patrol;
     }
 

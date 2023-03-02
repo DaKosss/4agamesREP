@@ -15,6 +15,9 @@ public class monster : MonoBehaviour
     public enum AI_State { Patrol, Stay, Chase };
     public AI_State AI_Enemy;
 
+    public AudioSource monsterAudioSource;
+    public AudioClip hortClip;
+
     void Start()
     {
         Time.timeScale = 1.0f;
@@ -45,6 +48,7 @@ public class monster : MonoBehaviour
         {
             gameObject.GetComponent<Animator>().SetBool("move", true);
             AI_Agent.SetDestination(Player.transform.position);
+            monsterAudioSource.PlayOneShot(hortClip);
         }
 
 
