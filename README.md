@@ -12,7 +12,7 @@ Welcome to Horror Survival, a terrifying experience set in a vast, dark world fi
 
 🎯 Objectives
 
-Collect 8 notes scattered across the map.
+Collect notes scattered across the map.
 
 Each note contains a digit of a secret code required to access the underground bunker.
 
@@ -26,7 +26,6 @@ Escape the bunker and survive!
 ✔️ Advanced AI Monster – It patrols, hears, and chases you smartly.
 ✔️ Jumpscare Animations – A horrifying death scene awaits if you fail.
 ✔️ Interactive Menu – Customize graphics, sound, and screen settings.
-✔️ Save System – Your progress is stored in a database.
 ✔️ Teleporting Monster – The surface-level entity can appear anywhere!
 ✔️ Intense Survival Mechanics – Stealth, strategy, and quick thinking are your best weapons.
 
@@ -35,8 +34,6 @@ Escape the bunker and survive!
 Engine: Unity (C#)
 
 AI System: Custom-built pathfinding & detection
-
-Database: SQLite for progress saving
 
 Audio System: 3D positional sound for immersive fear
 
